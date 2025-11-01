@@ -32,6 +32,7 @@ requirements:
     - typing_extensions >=4.0.0
     - greenlet
     - eval-type-backport
+    - exceptiongroup
 
 tests:
   - python:
