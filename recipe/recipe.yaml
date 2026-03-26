@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: advanced-alchemy
-  version: "1.8.2"
+  version: "1.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/advanced_alchemy-${{ version }}.tar.gz
-  sha256: 858c60430558306fb0550e247f1afd473afd49a50b17e84f9cb1cdb7987d57ec
+  sha256: 4a35f0a76cd8c8802b24dfea2f8b6137b7a3b2ac91d21f7731269575005b11cb
 
 build:
   noarch: python
@@ -39,7 +39,9 @@ tests:
       imports:
         - advanced_alchemy
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
