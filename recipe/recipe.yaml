@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: advanced-alchemy
-  version: "1.11.0"
+  version: "1.12.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/advanced_alchemy-${{ version }}.tar.gz
-  sha256: 3e42d854b9be6ee37867c490c74d0fdb3894b13e009f5b515e8c24d113011e08
+  sha256: 65d9349f91dc01327da93ece64a578c8942ce51425113116c0e28a94e6f34d4d
 
 build:
   noarch: python
